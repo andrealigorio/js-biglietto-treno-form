@@ -16,7 +16,7 @@
             <div class="top_form">
                 <div class="name">
                     <h3>Nome Cognome</h3>
-                    <input type="text" id="name_surname" placeholder="Nome e Cognome" minlength="5" maxlength="20">
+                    <input class="click" type="text" id="name_surname" placeholder="Nome e Cognome" minlength="5" maxlength="20">
                 </div>
                 <div class="km">
                     <h3>Km da percorrere</h3>
@@ -33,13 +33,13 @@
             </div>
             <div class="buttons_form">
                 <button id="generate">Genera</button>
-                <button id="annull">Annulla</button>  
+                <button id="cancel">Annulla</button>  
             </div>
         </div>
     </div>
     <div class="ticket">
         <h1>il tuo biglietto</h1>
-        <div class="box_ticket">
+        <div id="box_ticket" class="hidden">
             <h2>dettaglio passeggeri</h2>
             <div class="box_informations">
                 <div class="passenger_name">
