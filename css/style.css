@@ -6,7 +6,106 @@
 
 body {
     background-color: #b91450;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
 }
+
 h1 {
     color: white;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 30px 0;
+}
+h3 {
+    text-align: center;
+    padding-bottom: 10px;
+    color: #b91450;
+}
+
+.ticket_form {
+    width: 80%;
+    margin: 0 auto;
+}
+.box_form {
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px black;
+    padding: 20px 0;
+}
+.top_form {
+    display: flex;
+    justify-content: center;
+}
+.top_form .km {
+    padding: 0 50px;
+}
+input, select, button {
+    border-radius: 4px;
+}
+input, select {
+    border: 1px solid #b91450;
+    padding: 3px;
+}
+.name input, .km input {
+    width: 150px;
+}
+
+.buttons_form {
+    text-align: center;
+    margin-top: 40px;
+}
+.buttons_form button{
+    padding: 3px;
+    cursor: pointer;
+    color: #b91450;
+    font-weight: bold;
+    font-size: 16px;
+}
+button {
+    border: 1px solid grey;
+}
+
+.box_ticket {
+    width: 80%;
+    margin: 0 auto;
+    background-color: white;
+    padding: 10px;
+}
+.box_ticket h2 {
+    text-transform: uppercase;
+}
+.box_informations {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+.box_informations::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+.passenger_name {
+    width: 300px;
+    height: 140px;
+    background-color: lightgrey;
+    float: left;
+}
+.passenger_table {
+    float: left;
+}
+.passenger_name , .passenger_table {
+    padding: 20px;
+}
+.passenger_name h2{
+    padding-bottom: 10px;
+}
+.passenger_table th {
+    padding-right: 30px;
+}
+.passenger_table th:first-child {
+    width: 40%;
+    text-align: left;
+}
+.passenger_table td {
+    padding-top: 50px;
 }

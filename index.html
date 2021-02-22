@@ -4,48 +4,67 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>Ticket Train form</title>
 </head>
 <body>
     <div class="ticket_form">
-        <h1></h1>
+        <h1>calcola il prezzo del tuo biglietto</h1>
         <div class="box_form">
             <div class="top_form">
-    
+                <div class="name">
+                    <h3>Nome Cognome</h3>
+                    <input type="text" placeholder="Nome e Cognome">
+                </div>
+                <div class="km">
+                    <h3>Km da percorrere</h3>
+                    <input type="number" id="kilometres" name="kilometres" min="1" max="500">
+                </div>
+                <div class="age">
+                    <h3>Fascia d'età</h3>
+                    <select name="ages" id="ages">
+                        <option value="under18">Minorenne</option>
+                        <option value="over18">Maggiorenne</option>
+                        <option value="over65">Over65</option>
+                    </select>
+                </div>
             </div>
             <div class="buttons_form">
-    
+                <button>Genera</button>
+                <button>Annulla</button>  
             </div>
         </div>
     </div>
     <div class="ticket">
-        <h1></h1>
+        <h1>il tuo biglietto</h1>
         <div class="box_ticket">
-            <h2></h2>
+            <h2>dettaglio passeggeri</h2>
             <div class="box_informations">
                 <div class="passenger_name">
-    
+                    <h2>nome passeggero</h2>
+                    <span id="name">Lorem</span>
                 </div>
                 <div class="passenger_table">
                     <table>
                         <tr>
-                            <th></th>
-                            <th></th>
-                            <th></th>
-                            <th></th>
+                            <th>Offerta</th>
+                            <th>Carrozza</th>
+                            <th>Codice CP</th>
+                            <th>Costo Biglietto</th>
                         </tr>
-                        <td>
-                            <th></th>
-                            <th></th>
-                            <th></th>
-                            <th></th>
-                        </td>
+                        <tr>
+                            <td>lorem</td>
+                            <td>lorem</td>
+                            <td>lorem</td>
+                            <td>lorem</td>
+                        </tr>
                     </table>
                 </div>
             </div>
         </div>
     </div>
-    
+    <script src=js/main.js></script>
 </body>
 </html>
