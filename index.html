@@ -16,7 +16,7 @@
             <div class="top_form">
                 <div class="name">
                     <h3>Nome Cognome</h3>
-                    <input type="text" placeholder="Nome e Cognome">
+                    <input type="text" id="name_surname" placeholder="Nome e Cognome" minlength="5" maxlength="20">
                 </div>
                 <div class="km">
                     <h3>Km da percorrere</h3>
@@ -32,8 +32,8 @@
                 </div>
             </div>
             <div class="buttons_form">
-                <button>Genera</button>
-                <button>Annulla</button>  
+                <button id="generate">Genera</button>
+                <button id="annull">Annulla</button>  
             </div>
         </div>
     </div>
@@ -44,7 +44,7 @@
             <div class="box_informations">
                 <div class="passenger_name">
                     <h2>nome passeggero</h2>
-                    <span id="name">Lorem</span>
+                    <span id="name"></span>
                 </div>
                 <div class="passenger_table">
                     <table>
@@ -55,10 +55,10 @@
                             <th>Costo Biglietto</th>
                         </tr>
                         <tr>
-                            <td>lorem</td>
-                            <td>lorem</td>
-                            <td>lorem</td>
-                            <td>lorem</td>
+                            <td id="discount"></td>
+                            <td id="train_wagon"></td>
+                            <td id="train_code"></td>
+                            <td id="price"></td>
                         </tr>
                     </table>
                 </div>
